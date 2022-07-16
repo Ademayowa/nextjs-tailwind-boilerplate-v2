@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Header from '@/components/Header';
 
 export default function Layout({ title, description, keywords, children }) {
   return (
@@ -9,6 +10,8 @@ export default function Layout({ title, description, keywords, children }) {
         <meta name='keywords' content={keywords} />
         <link rel='icon' href='/favicon.svg' />
       </Head>
+
+      <Header />
       {children}
     </>
   );

@@ -1,7 +1,11 @@
+import Layout from '@/components/Layout';
+
 export default function Home() {
   return (
-    <div className='mt-5 text-xl'>
-      <h2>Home Page</h2>
-    </div>
+    <Layout>
+      <>
+        <h2 className='pt-40 text-5xl text-center'>Home Page</h2>
+      </>
+    </Layout>
   );
 }
